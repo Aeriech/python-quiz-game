@@ -2,7 +2,7 @@ import json
 from generate_content import generate_content_from_gemini
 from data_entry import get_int_input, get_string_input
 
-def generate_quiz_content(topic: str, quiz_length: int, difficulty_level: str):
+def generate_questions(topic: str, quiz_length: int, difficulty_level: str):
     prompt = f"""
 Generate a quiz about {topic} with {quiz_length} questions.
 The quiz should be designed to be of {difficulty_level} difficulty.
@@ -70,6 +70,7 @@ Please generate the JSON quiz now, in the EXACT format shown above, focusing on 
         quiz_data = json.loads(clean_json_str)
         
         return quiz_data["questions"]
+      
     except json.JSONDecodeError as e:
         print(f"JSON Decode Error: {e}")
         print("Raw Response Text:\n", quiz_json_string)
@@ -81,7 +82,7 @@ def main():
     difficulty_level = get_string_input("Enter the difficulty level (Easy, Medium, Hard): ", ["Easy", "Medium", "Hard"])
 
     print("\nGenerating quiz...\n")
-    questions = generate_quiz_content(topic, quiz_length, difficulty_level)
+    questions = generate_questions(topic, quiz_length, difficulty_level)
     
     score = 0
     question_num = 1
