@@ -73,8 +73,7 @@ Please generate the JSON quiz now, in the EXACT format shown above, focusing on 
     except json.JSONDecodeError as e:
         print(f"JSON Decode Error: {e}")
         print("Raw Response Text:\n", quiz_json_string)
-        return []
-    
+        return []   
 
 def main():
     topic = input("Enter the topic for the quiz: ")
@@ -101,4 +100,5 @@ def main():
     
     print(f"Your final score is {score}/{len(questions)}")
     
-main()
+if __name__ == "__main__":
+    main()
