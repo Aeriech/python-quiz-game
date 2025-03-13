@@ -26,12 +26,12 @@ Ensure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Aeriech/python-personal-finance-tracker.git
+   git clone https://github.com/Aeriech/python-quiz-game.git
    ```
 
 2. Install dependencies:
    ```bash
-   cd python-personal-finance-tracker
+   cd python-quiz-game
    pip install python-dotenv
    pip install google-generativeai
    cp .env.example .env
