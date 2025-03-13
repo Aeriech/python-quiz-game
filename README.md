@@ -1,5 +1,5 @@
-### Project Overview - AI-Powered Quiz Generator
-The AI-Powered Quiz Generator is a Python-based interactive quiz application that dynamically generates multiple-choice quizzes based on user-defined topics and difficulty levels. Using AI-powered content generation, it ensures a variety of well-structured questions tailored to different levels of expertise.
+### Project Overview - AI Quiz Generator
+The AI Quiz Generator is a Python-based interactive quiz application that dynamically generates multiple-choice quizzes based on user-defined topics and difficulty levels. Using AI-powered content generation, it ensures a variety of well-structured questions tailored to different levels of expertise.
 
 Key Features:
    - Dynamic Quiz Generation: Automatically creates quizzes based on a user-specified topic, number of questions, and difficulty level.
